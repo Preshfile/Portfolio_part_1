@@ -81,5 +81,6 @@ such as 'curl' or a web browser. For example, to create a new user, a POST reque
 can be made to the URL 'http://localhost:8080/users' with the requires user information in the 
 request body. To access the HTML view of all the users, a GET request can be made to the URL 'http://localhost:8080/'</p>
 
+
 <h2>The Core Team</h2>
 <p>Authored by <strong>Precious Oranye</strong></p>
