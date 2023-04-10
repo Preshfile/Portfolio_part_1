@@ -1,0 +1,59 @@
+Requirements for My Sqlite Project:
+
+Part 00:
+
+Create a class called MySqliteRequest in my_sqlite_request.rb
+All methods, except run, will return an instance of my_sqlite_request.
+Each row must have an ID.
+Implement a from method which must be present on each request.
+Implement a select method which will continue to build the request. During the run(), collect only the columns sent as parameters to select.
+Implement a where method which will continue to build the request. During the run(), filter the result which matches the value.
+Implement a join method which will load another filename_db and will join both databases on a column.
+Implement an order method which will sort depending on the order base on the column_name.
+Implement a method to insert which will receive a table name (filename). It will continue to build the request.
+Implement a method to values which will receive data. It will continue to build the request. During the run(), do the insert.
+Implement a method to update which will receive a table name (filename). It will continue to build the request. An update request might be associated with a where request.
+Implement a method to update which will receive data (a hash of data on format (key => value)). It will perform the update of attributes on all matching rows. An update request might be associated with a where request.
+Implement a delete method. It will set the request to delete on all matching rows. It will continue to build the request. A delete request might be associated with a where request.
+Implement a run method and it will execute the request.
+Part 01:
+
+Create a program which will be a Command Line Interface (CLI) to your MySqlite class.
+It will use readline and we will run it with ruby my_sqlite_cli.rb.
+It will accept request with SELECT|INSERT|UPDATE|DELETE, FROM, WHERE (max 1 condition), and JOIN ON (max 1 condition).
+You should save and load the database from a file.
+Note: In addition to accomplishing this challenge, you should take a read about B-Tree (not binary tree "B-Tree"), TRIE, and Reverse Index.
+
+
+
+
+
+
+
+
+
+
+
+To build this project, you can follow the steps below:
+
+Create a new file called my_sqlite_request.rb.
+Define a class called MySqliteRequest.
+Implement the initialize method.
+Implement the from method.
+Implement the select method.
+Implement the where method.
+Implement the join method.
+Implement the order method.
+Implement the insert method.
+Implement the values method.
+Implement the update method.
+Implement the set method.
+Implement the delete method.
+Implement the run method.
+After completing the MySqliteRequest class, you can move on to building the CLI interface in a new file called my_sqlite_cli.rb.
+
+Define a method called my_sqlite_cli.
+Use readline to read user input and parse it into a MySqliteRequest object.
+Call the run method on the MySqliteRequest object to execute the query.
+Continue reading user input until the user types quit.
+You should also make sure to save and load the database from a file, as specified in the project description.
